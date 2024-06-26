@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ItFits</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://api-maps.yandex.ru/1.1/index.xml" type="text/javascript"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="nav_bar wrap">
+        <div class="nav_bar__content">
+            <div class="nav_bar__logo">
+                <a href="#part1"><img src="res/logo.png"></a>
+            </div>
+            <div class="nav_bar__buttons">
+                <ul class="nav_bar__buttons__list">
+                    <li class="nav_bar__buttons__list__button"><a href="#part1" class="nav_bar__buttons__list__button__content">О тренере</a></li>
+                    <li class="nav_bar__buttons__list__button"><a href="#part2" class="nav_bar__buttons__list__button__content">О тренировках</a></li>
+                    <li class="nav_bar__buttons__list__button" class="nav_bar__buttons__list__button__content"><a class="button" href="app/app.apk"  style="width: 100%;">Скачать приложение</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="introduction wrap" id="part1">
+        <div class="introduction__text">
+            <h1 class="title title_lg">Сергей Борисевич</h1>
+            <p  class="desc_lg">
+                Я - сертифицированный тренер с более чем десятилетним опытом работы в фитнес-индустрии. 
+                Моя цель - помочь вам достичь ваших фитнес-целей с помощью профессиональных, 
+                индивидуально подобранных тренировок.
+            </p>
+            <br/>
+            <p class="desc_lg">
+                МФР: Миофасциальное расслабление помогает улучшить гибкость и уменьшить боли в мышцах. 
+                Это идеальный выбор для тех, кто стремится к быстрому восстановлению и улучшению общего самочувствия.
+            </p>
+            <br/>
+
+            <p class="desc_lg">
+                TRX: Тренировка с использованием подвесных систем TRX развивает силу, выносливость и баланс.
+                Этот метод позволяет выполнять эффективные упражнения с весом собственного тела.
+            </p>
+            <br/>
+            <p class="desc_lg">
+                Стретчинг: Стретчинг улучшает гибкость, подвижность суставов и снижает риск травм.
+                Регулярные занятия стретчингом помогают вам оставаться активными и здоровыми.
+            </p>
+            <br/>
+        </div>
+        <div class="introduction__image">
+            <img src="res/image.jpg" class="image"/>
+        </div>
+    </div>
+    <div class="training1" id="part2">
+        <h2>01 Очные занятия</h2>
+    </div>
+    <div class="scheduler wrap">
+        <div class="scheduler__description">
+            <h3 class="title title_lg">Тренер доступен в следующих фитнес-клубах</h3>
+            <ul style="list-style: none;">
+                <li>
+                    <span>•&nbsp;&nbsp;</span> <a href="https://jetgym.ru/chehov" class="scheduler__description__link desc_lg"> JetGym</a>
+                    <br/>
+                    <p class="desc_lg">
+                        Расписание работы клуба:<br/>
+                        пн-пт с 7:00 до 0:00<br/>
+                        сб-вс с 9:00 до 22:00<br/>
+                    </p>
+                </li>
+                <li>
+                    <span>•&nbsp;&nbsp;</span> <a href="https://www.worldclass-rostov.ru/club/exclusive/" class="scheduler__description__link desc_lg"> WorldClass</a>
+                    <br/>
+                    <p class="desc_lg">
+                        Расписание работы клуба:<br/>
+                        пн-пт с 6:30 до 0:00<br/>
+                        сб-вс с 7:00 до 23:00<br/>
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="scheduler__map">
+            <iframe  class="scheduler__map__content"
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3A7e923dacd8622828a3a0dcb64450a0977e34ddf15e58f6f4f7a3ecce622b0738&amp;source=constructor"  frameborder="0">
+            </iframe>
+        </div>
+    </div>
+    <div class="training2" id="part2">
+        <h2>02 Онлайн тренировки</h2>
+    </div>
+    <div class="application">
+        <div class="request__button">
+            <button class="button" onclick="location.href='https://t.me/ver_anuf'" type="button">
+                Оставить заявку
+            </button>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="footer__buttons">
+            <ul class="footer__buttons__list">
+                <li class="footer__buttons__list__button">© 2024 ItFits</li>
+                <li class="footer__buttons__list__button"><a href="privacy.html" class="footer__buttons__list__button__content">Политика конфиденциальности</a></li>
+                <li class="footer__buttons__list__button" id="download_btn" class="nav_bar__buttons__list__button__content"> <a href="#part1" class="footer__buttons__list__button__content">Наверх &#8593;</a></li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>

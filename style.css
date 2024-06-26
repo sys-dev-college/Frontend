@@ -1,0 +1,327 @@
+body {
+    background-color: #2c2c2c;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+}
+
+/* nav_bar */
+.wrap{
+    width: 100%;
+    max-width: 1920px;
+    margin: 0 auto;
+} 
+
+.nav_bar__content{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 40%;
+    align-items: center;
+    background-color: #2c2c2c;
+}
+.nav_bar{
+    position: fixed;
+    width: 100%;
+}
+
+.nav_bar__logo{
+    padding-right: 2vw;
+}
+.nav_bar__buttons{
+    padding-left: 2vw;
+    flex-grow: 1;
+}
+
+.nav_bar__buttons__list{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+}
+.nav_bar__buttons__list__button{
+    padding-left: 1vw;
+    padding-right: 1vw;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a.nav_bar__buttons__list__button__content{
+    color: #fff;
+}
+a.nav_bar__buttons__list__button__content:hover{
+    text-decoration: none;
+
+}
+a.nav_bar__buttons__list__button__content:link{
+    text-decoration: none;
+
+}
+a.nav_bar__buttons__list__button__content:visited{
+    text-decoration: none;
+
+}
+a.nav_bar__buttons__list__button__content:active{
+    text-decoration: none;
+
+}
+
+.container {
+    text-align: center;
+}
+
+h2 {
+    color: #ffcc00;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #3c3c3c;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 8px;
+    color: #ffcc00;
+    text-align: left;
+    width: 100%;
+}
+
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #616160;
+    color: #e2e1e1;
+    height: 80px;
+    width: 70%;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+
+.button {
+    background-color: #616160;
+    color: #e2e1e1;
+    height: 80px;
+    width: 70%;
+    text-decoration: none;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.nav_bar__buttons__list>li:last-child{
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #e6b800;
+    color: #2c2c2c;
+}
+
+
+/* part_one */
+
+.introduction{
+    padding-top: 150px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.image{
+    width: 100%;
+}
+.introduction__text{
+    width: 50%;
+}
+.introduction__image{
+    width: 45%;
+}
+
+/* part_two */
+
+.training1{
+    padding: 5px 0 5px 100px;
+    margin-bottom: 30px;
+    background-color: #1f1f1f;
+}
+.training2{
+    padding: 5px 0 5px 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: #1f1f1f;
+}
+
+.scheduler{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.scheduler__description{
+    padding: 40px;
+    width: 50%;
+}
+.scheduler__map{
+    text-align: center;
+    width: 45%;
+}
+.scheduler__map__content{
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+}
+a.scheduler__description__link{
+    color: #fff;
+}
+
+.request__button{
+    text-align: center;
+}
+
+.footer{
+    width: 100%;
+}
+
+.footer__buttons__list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    text-align: center;
+    margin-top: 40px;
+    padding: 0;
+}
+
+
+.footer__buttons__list__button{
+    padding-left: 5vw;
+    padding-right: 5vw;
+    list-style-type: none;
+    text-decoration: none;
+    text-align: center;
+}
+
+a.footer__buttons__list__button__content{
+    color: #fff;
+    align-self: center;
+}
+a.footer__buttons__list__button__content:hover{
+    text-decoration: none;
+
+}
+a.footer__buttons__list__button__content:link{
+    text-decoration: none;
+
+}
+a.footer__buttons__list__button__content:visited{
+    text-decoration: none;
+
+}
+a.footer__buttons__list__button__content:active{
+    text-decoration: none;
+
+}
+
+
+
+.title_lg{
+    font-size: 40px;
+}
+
+.desc_lg{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+@media (max-width:698px) {
+
+    .introduction{
+        flex-direction: column;
+        align-items: center;
+    }
+    .introduction__text{
+        width: 100%;
+    }
+    .introduction__image{
+        width: 60%;
+    }
+
+    .scheduler{
+        flex-direction: column;
+    }
+    .scheduler__description{
+        width: 100%;
+    }
+    .scheduler__map{
+        text-align: center;
+        width: 100%;
+    }
+    
+
+}
+
+@media (max-width:616px) {
+    .training1{
+        padding: 2px 0 2px 30px;
+        margin-bottom: 0;
+    }
+    .training2{
+        padding: 2px 0 2px 30px;
+        margin-bottom: 0;
+    }
+    .scheduler__description {
+        padding: 0px;
+    }
+    .nav_bar__content {
+        padding: 0px;
+    }
+    .wrap{
+        width: 100%;
+        max-width: 1920px;
+        margin: 0;
+    } 
+    .nav_bar__content{
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav_bar__logo{
+        padding-right: 0;
+    }
+    .nav_bar__buttons{
+        padding-left: 0;
+    }
+    .nav_bar__buttons__list{
+        padding-left: 0;
+        gap: 5px;
+    }
+    .nav_bar__buttons__list {
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: center;
+    }
+    .introduction {
+        padding-top: 285px;
+    }
+}
